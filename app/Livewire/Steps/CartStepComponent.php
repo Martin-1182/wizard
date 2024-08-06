@@ -12,9 +12,11 @@ class CartStepComponent extends StepComponent
         return view('livewire.steps.cart-step-component');
     }
 
-    public function stepName(): string
+    public function stepInfo(): array
     {
-        return 'Cart';
+        return [
+            'icon' => 'check-circle',
+        ];
     }
 
     public function submit(): void

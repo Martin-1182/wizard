@@ -1,4 +1,9 @@
-<form wire:submit="submit" class="mt-6">
+<div>
+    <div class="my-6 border-b-2 border-b-graydark pb-4">
+        <x-livewire::navigation :steps="$steps"/>
+    </div>
+
+    <form wire:submit="submit" class="mt-6">
     <h5 class="text-lg font-medium text-gray-900">{{'Do your work, then step back.'}}</h5>
     <x-livewire::buttons>
         <x-slot:back>
@@ -13,3 +18,4 @@
         </button>
     </x-livewire::buttons>
 </form>
+</div>

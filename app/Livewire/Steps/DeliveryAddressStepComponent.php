@@ -12,9 +12,11 @@ class DeliveryAddressStepComponent extends StepComponent
         return view('livewire.steps.delivery-address-step-component');
     }
 
-    public function stepName(): string
+    public function stepInfo(): array
     {
-        return 'Delivery Address';
+        return [
+            'icon' => 'check-circle',
+        ];
     }
 
     public function submit(): void

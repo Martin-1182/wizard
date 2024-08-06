@@ -12,13 +12,15 @@ class ConfirmationStepComponent extends StepComponent
         return view('livewire.steps.confirmation-step-component');
     }
 
-    public function stepName(): string
+    public function stepInfo(): array
     {
-        return 'Confirmation';
+        return [
+            'icon' => 'check-circle',
+        ];
     }
 
     public function submit(): void
     {
-        $this->nextStep();
+        //
     }
 }
