@@ -4,18 +4,28 @@
     </div>
 
     <form wire:submit="submit" class="mt-6">
-    <h5 class="text-lg font-medium text-gray-900">{{'The whole world belongs to you.'}}</h5>
-    <x-livewire::buttons>
-        <x-slot:back>
-            <button type="button" wire:click="previousStep"
-                    class="inline-flex items-center justify-center rounded-md bg-graydark py-2 px-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-2 xl:px-4">
-                {{ __('Back') }}
-            </button>
-        </x-slot:back>
-        <button
-            class="inline-flex items-center justify-center rounded-md bg-black py-2 px-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-2 xl:px-4">
-            {{ __('Next step') }}
-        </button>
-    </x-livewire::buttons>
+        {{-- table name email address --}}
+        <div>
+            <table class="w-full">
+                <tr>
+                    <td class="w-1/2">Name</td>
+                    <td class="w-1/2">{{ 'Martin' }}</td>
+                </tr>
+                <tr>
+                    <td class="w-1/2">Email</td>
+                    <td class="w-1/2">{{ 'm.halaj@websystem.sk' }}</td>
+                </tr>
+            </table>
+        </div>
+        <x-livewire::buttons>
+            <x-slot:back>
+                <x-secondary-button wire:click="previousStep">
+                    Back
+                </x-secondary-button>
+            </x-slot:back>
+            <x-primary-button>
+                {{ __('Next step') }}
+            </x-primary-button>
+        </x-livewire::buttons>
 </form>
 </div>

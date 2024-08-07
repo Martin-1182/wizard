@@ -4,14 +4,14 @@ docroot: public
 php_version: "8.2"
 webserver_type: apache-fpm
 xdebug_enabled: false
-additional_hostnames: []
-additional_fqdns: []
+additional_hostnames: [ ]
+additional_fqdns: [ ]
 database:
-    type: mariadb
-    version: "10.11"
+  type: mariadb
+  version: "10.4"
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: []
+web_environment: [ ]
 corepack_enable: false
 
 # Key features of DDEV's config.yaml:
@@ -276,4 +276,43 @@ corepack_enable: false
 # See https://ddev.readthedocs.io/en/stable/users/extend/custom-commands/ for more
 # information on the commands that can be extended and the tasks you can define
 # for them. Example:
-#hooks:
+keywords:
+  -
+bin:
+scripts-descriptions:
+replace:
+minimum-stability: dev
+description:
+dist:
+scripts-aliases:
+source:
+default-branch:
+non-feature-branches:
+_comment:
+repositories:
+extra:
+autoload:
+abandoned:
+scripts:
+funding:
+  -
+autoload-dev:
+require-dev:
+require:
+archive:
+readme:
+suggest:
+version:
+include-path:
+prefer-stable:
+license:
+provide:
+time:
+support:
+config:
+target-dir:
+php-ext:
+authors:
+  -
+homepage:
+conflict:#hooks:

@@ -15,7 +15,7 @@ class DeliveryAddressStepComponent extends StepComponent
     public function stepInfo(): array
     {
         return [
-            'icon' => 'check-circle',
+            'label' => 'Delivery Address',
         ];
     }
 
