@@ -23,9 +23,6 @@
                     Back
                 </x-secondary-button>
             </x-slot:back>
-            <x-primary-button>
-                {{ __('Next step') }}
-            </x-primary-button>
         </x-livewire::buttons>
 </form>
 </div>

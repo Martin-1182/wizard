@@ -16,18 +16,6 @@
             class="w-full"
         />
 
-        <x-input-label class="mt-4" for="zip" :value="__('Zip')"/>
-        <x-text-input
-            id="zip"
-            class="w-full"
-        />
-
-        <x-input-label class="mt-4" for="country" :value="__('Country')"/>
-        <x-text-input
-            id="country"
-            class="w-full"
-        />
-
         <x-livewire::buttons>
             <x-slot:back>
                 <x-secondary-button wire:click="previousStep">
